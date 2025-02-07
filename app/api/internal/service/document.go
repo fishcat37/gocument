@@ -79,10 +79,11 @@ func UpdateDocument(c *gin.Context) {
 		global.Logger.Info("用户请求错误" + err.Error())
 		return
 	}
-	err := dao.UpdateDocument(&document, &documentContent)
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "数据库更新失败" + err.Error()})
-		global.Logger.Error("数据库更新失败" + err.Error())
+	var err1 error
+	err1 = dao.UpdateDocument(&document, &documentContent)
+	if err1 != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "数据库更新失败" + err1.Error()})
+		global.Logger.Error("数据库更新失败" + err1.Error())
 		return
 	}
 	c.JSON(http.StatusOK, gin.H{"info": "success", "status": consts.Success})
