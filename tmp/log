@@ -1,0 +1,24 @@
+2025-02-04T12:58:27.443+0800 INFO D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:38 initialize logger success
+2025-02-04T13:00:51.078+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-04T13:01:18.421+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-05T17:11:48.495+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-05T17:11:48.528+0800 [31mFATAL[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:22 failed to connect mysql
+2025-02-05T17:12:04.383+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-05T17:12:04.459+0800 [31mFATAL[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:22 failed to connect mysql
+2025-02-05T17:18:55.963+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-05T17:18:55.999+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:25 mysql connect success
+2025-02-05T17:18:56.011+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:44 redis connect success
+2025-02-06T18:15:10.022+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-06T18:15:10.054+0800 [31mFATAL[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:21 failed to connect mysql
+2025-02-06T18:16:41.214+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-06T18:16:41.267+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:24 mysql connect success
+2025-02-06T18:16:41.274+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:43 redis connect success
+2025-02-06T18:17:08.210+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-06T18:17:08.253+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:24 mysql connect success
+2025-02-06T18:17:08.257+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:43 redis connect success
+2025-02-06T18:17:54.635+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-06T18:17:54.680+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:24 mysql connect success
+2025-02-06T18:17:54.682+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:43 redis connect success
+2025-02-06T18:22:07.682+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-06T18:22:07.720+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:24 mysql connect success
+2025-02-06T18:22:07.723+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:43 redis connect success

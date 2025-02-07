@@ -1,0 +1,28 @@
+ZapConfig:
+  Filename: "tmp/log"
+  MaxSize: 5
+  MaxAge: 400
+  MaxBackups: 1000
+
+DatabaseConfig:
+  MysqlConfig:
+    Username: "root"
+    Password: "200627"
+    Addr: "localhost:3307"
+    DB: "gocument"
+
+  RedisConfig:
+    Addr: "localhost:6379"
+    password: ""
+    DB: 0
+
+  MongoConfig:
+    Username: "root"
+    Password: "200627"
+    Addr: "localhost:27017"
+    DB: "gocument"
+
+
+JwtConfig:
+  JwtSecretKey: "kunkun"
+  Issuer: "fish"
