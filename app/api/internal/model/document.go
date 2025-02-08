@@ -6,11 +6,12 @@ import (
 )
 
 type Document struct {
-	ID       uint      `json:"id" gorm:"primary_key;AUTO_INCREMENT"`
-	UserID   uint      `json:"user_id"`
-	Title    string    `json:"title"`
-	CreateAt time.Time `json:"create_at" gorm:"autoCreateTime"`
-	UpdateAt time.Time `json:"update_at" gorm:"autoUpdateTime"`
+	ID        uint      `json:"id" gorm:"primary_key;AUTO_INCREMENT" uri:"id"`
+	UserID    uint      `json:"user_id"`
+	Title     string    `json:"title"`
+	Authority int       `json:"authority"`
+	CreateAt  time.Time `json:"create_at" gorm:"autoCreateTime"`
+	UpdateAt  time.Time `json:"update_at" gorm:"autoUpdateTime"`
 }
 
 type DocumentContent struct {
@@ -20,10 +21,11 @@ type DocumentContent struct {
 }
 
 type WholeDocument struct {
-	ID       uint      `json:"id"`
-	UserID   uint      `json:"user_id"`
-	Title    string    `json:"title"`
-	CreateAt time.Time `json:"create_at"`
-	UpdateAt time.Time `json:"update_at"`
-	Content  string    `json:"content"`
+	ID        uint      `json:"id"`
+	UserID    uint      `json:"user_id"`
+	Title     string    `json:"title"`
+	Authority int       `json:"authority"`
+	CreateAt  time.Time `json:"create_at"`
+	UpdateAt  time.Time `json:"update_at"`
+	Content   string    `json:"content"`
 }

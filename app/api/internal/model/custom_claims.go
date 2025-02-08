@@ -9,3 +9,9 @@ type CustomClaims struct {
 	Username string
 	jwt.RegisteredClaims
 }
+
+type ShareClaims struct {
+	ID     uint
+	UserID uint
+	jwt.RegisteredClaims
+}

@@ -18,9 +18,11 @@ func InitRouter() {
 	document := r.Group("/document", middleware.AuthMiddleware())
 	{
 		document.POST("/create", service.Create)
-		document.GET("/get", service.GetDocument)
+		document.GET("/:id", service.GetDocument)
 		document.PUT("/update", service.UpdateDocument)
+		document.GET("/share", service.ShareDocument)
 	}
+	r.GET("/document/share/:id", middleware.FindAuthorityMiddleware(), service.GetSharedDocument)
 	err := r.Run()
 	if err != nil {
 		global.Logger.Fatal("init router failed" + err.Error())
