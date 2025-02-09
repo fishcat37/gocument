@@ -7,7 +7,7 @@ import (
 
 type Document struct {
 	ID        uint      `json:"id" gorm:"primary_key;AUTO_INCREMENT" uri:"id"`
-	UserID    uint      `json:"user_id"`
+	UserID    uint      `json:"user_id" gorm:"user_id"`
 	Title     string    `json:"title"`
 	Authority int       `json:"authority"`
 	CreateAt  time.Time `json:"create_at" gorm:"autoCreateTime"`

@@ -49,3 +49,24 @@ func UpdateDocument(document *model.Document, documentContent *model.DocumentCon
 	}
 	return nil
 }
+
+func GetDocumentList(document model.Document, documentList *[]model.Document) error {
+	result := global.MysqlDB.Model(model.Document{}).Where("user_id = ?", document.UserID).Find(documentList)
+	if result.Error != nil {
+		return result.Error
+	}
+	return nil
+}
+
+func DeleteDocument(document *model.Document) error {
+	result := global.MysqlDB.Model(model.Document{}).Where("id = ?", document.ID).Delete(document)
+	if result.Error != nil {
+		return result.Error
+	}
+	collection := global.MongoDB.Database("gocument").Collection("documents")
+	_, err := collection.DeleteOne(context.TODO(), bson.M{"doc_id": document.ID})
+	if err != nil {
+		return err
+	}
+	return nil
+}
