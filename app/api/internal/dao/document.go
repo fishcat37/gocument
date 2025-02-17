@@ -23,6 +23,7 @@ func InsertDocument(document *model.Document, documentContent *model.DocumentCon
 	return nil
 }
 
+// 需要用户名与文档名
 func FindDocument(document *model.Document, wholeDocument *model.WholeDocument) error {
 	result := global.MysqlDB.Model(model.Document{}).Where("id = ? AND user_id = ?", document.ID, document.UserID).First(document)
 	// if result.RowsAffected == 0 {
@@ -41,6 +42,7 @@ func FindDocument(document *model.Document, wholeDocument *model.WholeDocument) 
 	wholeDocument.Content = documentContent
 	return nil
 }
+
 func FindDocumentByID(document *model.Document, wholeDocument *model.WholeDocument) error {
 	result := global.MysqlDB.Model(model.Document{}).Where("id = ?", document.ID).First(document)
 	if result.RowsAffected == 0 {
@@ -58,6 +60,8 @@ func FindDocumentByID(document *model.Document, wholeDocument *model.WholeDocume
 	wholeDocument.Content = documentContent
 	return nil
 }
+
+// 会检查是否为文档主人
 func UpdateDocument(document *model.Document, documentContent *model.DocumentContent) error {
 	result := global.MysqlDB.Model(model.Document{}).Where("id = ? AND user_id = ?", document.ID, document.UserID).Updates(document)
 	if result.RowsAffected == 0 {
@@ -82,6 +86,7 @@ func GetDocumentList(document model.Document, documentList *[]model.Document) er
 	return nil
 }
 
+// 会检查权限
 func DeleteDocument(document *model.Document) error {
 	result := global.MysqlDB.Model(model.Document{}).Where("id = ? AND user_id = ?", document.ID, document.UserID).Delete(document)
 	if result.RowsAffected == 0 {

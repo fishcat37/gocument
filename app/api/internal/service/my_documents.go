@@ -10,6 +10,9 @@ import (
 	"strconv"
 )
 
+//全部需要authorization，都会得到用户id
+
+// 需要form-data格式的文档名，正文（html），是否公开
 func Create(c *gin.Context) {
 	id, get := c.Get("ID")
 	if !get {
@@ -27,26 +30,6 @@ func Create(c *gin.Context) {
 		return
 	}
 	document.Title = c.PostForm("title")
-	//file, err := c.FormFile("content")
-	//if err != nil {
-	//	c.JSON(http.StatusBadRequest, gin.H{"status": consts.GetFileFailed, "error": err})
-	//	global.Logger.Error("获取文档失败")
-	//	return
-	//}
-	//fileReader, err := file.Open()
-	//if err != nil {
-	//	c.JSON(http.StatusBadRequest, gin.H{"status": consts.GetFileFailed, "error": err})
-	//	global.Logger.Error("获取文档失败")
-	//	return
-	//}
-	//defer fileReader.Close()
-	//fileContent, err := io.ReadAll(fileReader)
-
-	//if err != nil {
-	//	c.JSON(http.StatusBadRequest, gin.H{"status": consts.GetFileFailed, "error": err})
-	//	global.Logger.Error("读取文档失败")
-	//	return
-	//}
 	documentContent.Content = c.PostForm("content")
 	if err := dao.InsertDocument(&document, &documentContent); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "数据库插入失败" + err.Error()})
@@ -56,6 +39,7 @@ func Create(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"info": "success", "status": consts.Success, "ID": document.ID})
 }
 
+// 需要路径参数文档id
 func GetMyDocument(c *gin.Context) {
 	id, get := c.Get("ID")
 	if !get {
@@ -71,13 +55,14 @@ func GetMyDocument(c *gin.Context) {
 	}
 	var wholeDocument model.WholeDocument
 	if err := dao.FindDocument(&document, &wholeDocument); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "数据库查找失败" + err.Error() + string(document.ID) + string(document.UserID)})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "数据库查找失败" + err.Error()})
 		global.Logger.Error("数据库查找失败" + err.Error())
 		return
 	}
 	c.JSON(http.StatusOK, gin.H{"info": "success", "status": consts.Success, "document": wholeDocument})
 }
 
+// 不需要参数
 func GetMyDocuments(c *gin.Context) {
 	id, get := c.Get("ID")
 	if !get {
@@ -95,6 +80,7 @@ func GetMyDocuments(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"info": "success", "status": consts.Success, "documentList": documentList})
 }
 
+// 需要query格式的文档id
 func ShareMyDocument(c *gin.Context) {
 	id, get := c.Get("ID")
 	if !get {
@@ -108,13 +94,6 @@ func ShareMyDocument(c *gin.Context) {
 		global.Logger.Info("用户请求错误" + err.Error())
 		return
 	}
-	//shareToken, err := utils.CreateShareToken(document)
-	//if err != nil {
-	//	c.JSON(http.StatusInternalServerError, gin.H{"error": "分享失败" + err.Error()})
-	//	global.Logger.Error("分享token生成失败" + err.Error())
-	//	return
-	//}
-	//c.JSON(http.StatusOK, gin.H{"info": "success", "status": consts.Success, "shareToken": shareToken})
 	var wholeDocument model.WholeDocument
 	err := dao.FindDocumentByID(&document, &wholeDocument)
 	if err != nil {
@@ -125,6 +104,7 @@ func ShareMyDocument(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"status": consts.Success, "info": "success", "share_id": wholeDocument.Content.ID})
 }
 
+// 需要form-data格式的文档id与文档内容，可选参数为title和权限
 func UpdateMyDocument(c *gin.Context) {
 	id, get := c.Get("ID")
 	if !get {
@@ -154,19 +134,6 @@ func UpdateMyDocument(c *gin.Context) {
 		}
 	}
 	document.Title = c.PostForm("title")
-	//fileReader, err := os.Open(c.PostForm("content"))
-	//if err != nil {
-	//	c.JSON(http.StatusBadRequest, gin.H{"status": consts.GetFileFailed, "error": err})
-	//	global.Logger.Error("获取文档失败")
-	//	return
-	//}
-	//defer fileReader.Close()
-	//fileContent, err := io.ReadAll(fileReader)
-	//if err != nil {
-	//	c.JSON(http.StatusBadRequest, gin.H{"status": consts.GetFileFailed, "error": err})
-	//	global.Logger.Error("读取文档失败")
-	//	return
-	//}
 	documentContent.Content = c.PostForm("content")
 	var err1 error
 	err1 = dao.UpdateDocument(&document, &documentContent)
@@ -178,6 +145,7 @@ func UpdateMyDocument(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"info": "success", "status": consts.Success})
 }
 
+// 路径参数文档id
 func DeleteMyDocument(c *gin.Context) {
 	id, err := c.Get("ID")
 	if !err {

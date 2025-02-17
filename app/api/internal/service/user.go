@@ -121,16 +121,7 @@ func Change(c *gin.Context) {
 		global.Logger.Info("用户修改信息的请求错误" + err.Error())
 		return
 	}
-	//isFind, err := dao.FindUser(&user)
-	//if !isFind {
-	//	c.JSON(http.StatusOK, gin.H{"info": "error", "status": consts.UserNotExist, "mess": "用户不存在或密码错误"})
-	//	return
-	//} else if err != nil {
-	//	c.JSON(http.StatusInternalServerError, gin.H{"error": "数据库查找出错" + err.Error()})
-	//	global.Logger.Error("MySQL查找用户出错" + err.Error())
-	//	return
-	//}
-	err := dao.UpdateUser(&user)
+	err := dao.UpdateUser(&user) //根据authorization
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "数据库更新出错" + err.Error()})
 		global.Logger.Error("MySQL更新用户数据失败" + err.Error())
@@ -183,7 +174,7 @@ func ChangePassword(c *gin.Context) {
 		Username: username.(string),
 		Password: oldPassword,
 	}
-	err := dao.UpdatePassword(&user, newPassword)
+	err := dao.UpdatePassword(&user, newPassword) //根据authorization
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"status": consts.DatabaseUpdateFailed, "error": "更改密码失败"})
 		global.Logger.Error("更改密码失败 " + err.Error())
