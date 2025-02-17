@@ -22,3 +22,223 @@
 2025-02-06T18:22:07.682+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
 2025-02-06T18:22:07.720+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:24 mysql connect success
 2025-02-06T18:22:07.723+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:43 redis connect success
+2025-02-10T17:10:32.696+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-10T17:10:32.737+0800 [31mFATAL[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:24 failed to connect mysql
+2025-02-10T17:15:52.613+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-10T17:15:52.655+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:27 mysql connect success
+2025-02-10T17:15:52.656+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:46 redis connect success
+2025-02-10T17:15:52.658+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:61 mongodb connect success
+2025-02-16T11:09:04.326+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T11:09:04.507+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:28 mysql connect success
+2025-02-16T11:09:04.526+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:47 redis connect success
+2025-02-16T11:09:04.526+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:62 mongodb connect success
+2025-02-16T16:48:31.746+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T16:48:31.818+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:28 mysql connect success
+2025-02-16T16:48:31.825+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:47 redis connect success
+2025-02-16T16:48:31.826+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:62 mongodb connect success
+2025-02-16T16:48:31.827+0800 [31mFATAL[0m D:/goproject/src/work/gocument/app/api/router/v1/router.go:44 init router failedlisten tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2025-02-16T16:52:13.583+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T16:52:13.623+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:28 mysql connect success
+2025-02-16T16:52:13.626+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:47 redis connect success
+2025-02-16T16:52:13.626+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:62 mongodb connect success
+2025-02-16T16:53:37.024+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T16:53:37.084+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:28 mysql connect success
+2025-02-16T16:53:37.090+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:47 redis connect success
+2025-02-16T16:53:37.091+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:62 mongodb connect success
+2025-02-16T16:58:28.666+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T16:58:28.703+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:28 mysql connect success
+2025-02-16T16:58:28.708+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:47 redis connect success
+2025-02-16T16:58:28.709+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:62 mongodb connect success
+2025-02-16T16:59:18.465+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:20 用户请求错误json: cannot unmarshal number into Go struct field User.password of type string
+2025-02-16T16:59:40.119+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:39 MySQL插入用户出错Error 1146 (42S02): Table 'gocument.users' doesn't exist
+2025-02-16T17:04:18.126+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:04:18.503+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:04:18.507+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:04:18.507+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:07:37.850+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:50 用户请求错误json: cannot unmarshal number into Go struct field User.password of type string
+2025-02-16T17:19:23.311+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:19:23.829+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:19:23.835+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:19:23.836+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:22:16.539+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:22:17.012+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:22:17.022+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:22:17.023+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:24:34.169+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:24:34.638+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:24:34.641+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:24:34.641+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:25:28.553+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:25:29.049+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:25:29.064+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:25:29.065+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:25:30.972+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:136 MySQL更新用户数据失败用户不存在
+2025-02-16T17:25:49.790+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:136 MySQL更新用户数据失败用户不存在
+2025-02-16T17:30:06.050+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:30:06.532+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:30:06.544+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:30:06.545+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:30:28.904+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:136 MySQL更新用户数据失败用户不存在
+2025-02-16T17:31:16.097+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:136 MySQL更新用户数据失败用户不存在
+2025-02-16T17:34:48.096+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:136 MySQL更新用户数据失败用户不存在
+2025-02-16T17:34:51.922+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:136 MySQL更新用户数据失败用户不存在
+2025-02-16T17:35:44.902+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:35:45.393+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:35:45.398+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:35:45.399+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:35:49.149+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:136 MySQL更新用户数据失败用户不存在
+2025-02-16T17:35:58.599+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:35:59.082+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:35:59.086+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:35:59.086+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:36:02.046+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:136 MySQL更新用户数据失败用户不存在
+2025-02-16T17:36:17.921+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:36:18.379+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:36:18.388+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:36:18.388+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:42:46.951+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:42:47.426+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:42:47.432+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:42:47.432+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T17:43:17.174+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T17:43:17.634+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T17:43:17.647+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T17:43:17.647+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T18:14:35.270+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T18:14:35.740+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T18:14:35.746+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T18:14:35.746+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T18:19:17.777+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T18:19:18.251+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T18:19:18.258+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T18:19:18.258+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T18:20:44.298+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T18:20:44.772+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T18:20:44.786+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T18:20:44.786+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T18:20:47.480+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:187 更改密码失败 密码错误
+2025-02-16T18:26:07.363+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/user.go:187 更改密码失败 密码错误
+2025-02-16T20:11:45.633+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:11:46.166+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:11:46.182+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:11:46.184+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T20:12:27.052+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:12:27.557+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:12:27.563+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:12:27.564+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T20:21:02.172+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:21:02.687+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:21:02.697+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:21:02.698+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T20:23:45.834+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:23:46.310+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:23:46.317+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:23:46.317+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T20:25:36.977+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:25:37.438+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:25:37.443+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:25:37.443+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T20:25:39.680+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:36 获取文档失败
+2025-02-16T20:26:45.522+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:36 获取文档失败
+2025-02-16T20:29:20.174+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:29:20.678+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:29:20.685+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:29:20.685+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T20:29:29.064+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:55 数据库插入失败client is disconnected
+2025-02-16T20:32:27.400+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:55 数据库插入失败client is disconnected
+2025-02-16T20:32:32.291+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:32:32.763+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:32:32.768+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:32:32.768+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:67 mongodb connect success
+2025-02-16T20:32:37.861+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:55 数据库插入失败client is disconnected
+2025-02-16T20:36:47.524+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:36:47.996+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:36:48.012+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:36:48.101+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-16T20:36:55.449+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:55 数据库插入失败client is disconnected
+2025-02-16T20:41:06.607+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:41:07.102+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:41:07.113+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:41:07.138+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-16T20:41:15.005+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:55 数据库插入失败client is disconnected
+2025-02-16T20:41:17.411+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:55 数据库插入失败client is disconnected
+2025-02-16T20:44:11.456+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:44:11.918+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:44:11.923+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:44:11.939+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-16T20:44:21.338+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:55 数据库插入失败client is disconnected
+2025-02-16T20:44:22.964+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:55 数据库插入失败client is disconnected
+2025-02-16T20:48:08.889+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:48:09.359+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:48:09.363+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:48:09.382+0800 [31mFATAL[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:68 failed to ping mongodb
+2025-02-16T20:56:03.365+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:56:03.831+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:56:03.837+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:56:03.852+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-16T20:57:27.942+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T20:57:28.377+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T20:57:28.384+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T20:57:28.399+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-16T20:59:05.585+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:77 数据库查找失败文档不存在
+2025-02-16T21:02:13.047+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T21:02:13.533+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T21:02:13.546+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T21:02:13.556+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-16T21:02:18.523+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:77 数据库查找失败文档不存在
+2025-02-16T21:02:58.197+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T21:02:58.670+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T21:02:58.674+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T21:02:58.686+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-16T21:03:04.188+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:77 数据库查找失败文档不存在
+2025-02-16T21:03:06.586+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:77 数据库查找失败文档不存在
+2025-02-16T21:03:44.110+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T21:03:44.575+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T21:03:44.583+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T21:03:44.595+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-16T21:03:49.129+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:77 数据库查找失败文档不存在
+2025-02-16T21:05:11.108+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T21:05:11.575+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T21:05:11.580+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T21:05:11.600+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-16T21:05:15.549+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:77 数据库查找失败Error 1054 (42S22): Unknown column 'documents.content' in 'field list'
+2025-02-16T21:05:22.237+0800 [31mERROR[0m d:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:77 数据库查找失败Error 1054 (42S22): Unknown column 'documents.content' in 'field list'
+2025-02-16T21:11:38.897+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-16T21:11:39.387+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-16T21:11:39.402+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-16T21:11:39.416+0800 [34mINFO[0m d:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-17T09:12:11.135+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-17T09:12:11.697+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-17T09:12:11.707+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-17T09:12:11.725+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-17T11:41:26.228+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-17T11:41:26.728+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-17T11:41:26.739+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-17T11:41:26.755+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-17T12:47:59.403+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-17T12:47:59.848+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-17T12:47:59.852+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-17T12:47:59.866+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-17T13:17:53.426+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:77 数据库查找失败record not found
+2025-02-17T13:45:20.220+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-17T13:45:20.698+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-17T13:45:20.715+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-17T13:45:20.732+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-17T13:58:16.034+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-17T13:58:16.538+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-17T13:58:16.546+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-17T13:58:16.556+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-17T14:01:44.609+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-17T14:01:45.079+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-17T14:01:45.094+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-17T14:01:45.108+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-17T14:05:23.039+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-17T14:05:23.515+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-17T14:05:23.526+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-17T14:05:23.543+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-17T14:06:44.443+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-17T14:06:44.932+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-17T14:06:44.948+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-17T14:06:44.961+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-17T14:06:46.970+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:175 数据库更新失败未找到你的文档
+2025-02-17T14:10:09.279+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:196 数据库删除失败未找到

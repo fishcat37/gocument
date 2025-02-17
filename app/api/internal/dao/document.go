@@ -14,8 +14,9 @@ func InsertDocument(document *model.Document, documentContent *model.DocumentCon
 		return result.Error
 	}
 	documentContent.DocID = document.ID
-	collection := global.MongoDB.Database("gocument").Collection("documents")
-	_, err := collection.InsertOne(context.TODO(), documentContent)
+	database := global.MongoDB.Database("gocument")
+	collection := database.Collection("documents")
+	_, err := collection.InsertOne(context.TODO(), *documentContent)
 	if err != nil {
 		return err
 	}
@@ -23,22 +24,45 @@ func InsertDocument(document *model.Document, documentContent *model.DocumentCon
 }
 
 func FindDocument(document *model.Document, wholeDocument *model.WholeDocument) error {
-	result := global.MysqlDB.Model(model.Document{}).Where("id = ?", document.ID).First(wholeDocument)
+	result := global.MysqlDB.Model(model.Document{}).Where("id = ? AND user_id = ?", document.ID, document.UserID).First(document)
+	// if result.RowsAffected == 0 {
+	// 	return fmt.Errorf("文档不存在")
+	// } else
+	if result.Error != nil {
+		return result.Error
+	}
+	collection := global.MongoDB.Database("gocument").Collection("documents")
+	var documentContent model.DocumentContent
+	err := collection.FindOne(context.TODO(), bson.M{"doc_id": document.ID}).Decode(&documentContent)
+	if err != nil {
+		return err
+	}
+	wholeDocument.Document = *document
+	wholeDocument.Content = documentContent
+	return nil
+}
+func FindDocumentByID(document *model.Document, wholeDocument *model.WholeDocument) error {
+	result := global.MysqlDB.Model(model.Document{}).Where("id = ?", document.ID).First(document)
 	if result.RowsAffected == 0 {
 		return fmt.Errorf("文档不存在")
 	} else if result.Error != nil {
 		return result.Error
 	}
 	collection := global.MongoDB.Database("gocument").Collection("documents")
-	err := collection.FindOne(context.TODO(), bson.M{"doc_id": document.ID}).Decode(wholeDocument)
+	var documentContent model.DocumentContent
+	err := collection.FindOne(context.TODO(), bson.M{"doc_id": document.ID}).Decode(&documentContent)
 	if err != nil {
 		return err
 	}
+	wholeDocument.Document = *document
+	wholeDocument.Content = documentContent
 	return nil
 }
-
 func UpdateDocument(document *model.Document, documentContent *model.DocumentContent) error {
-	result := global.MysqlDB.Model(model.Document{}).Where("id = ?", document.ID).Updates(document)
+	result := global.MysqlDB.Model(model.Document{}).Where("id = ? AND user_id = ?", document.ID, document.UserID).Updates(document)
+	if result.RowsAffected == 0 {
+		return fmt.Errorf("未找到你的文档")
+	}
 	if result.Error != nil {
 		return result.Error
 	}
@@ -59,7 +83,10 @@ func GetDocumentList(document model.Document, documentList *[]model.Document) er
 }
 
 func DeleteDocument(document *model.Document) error {
-	result := global.MysqlDB.Model(model.Document{}).Where("id = ?", document.ID).Delete(document)
+	result := global.MysqlDB.Model(model.Document{}).Where("id = ? AND user_id = ?", document.ID, document.UserID).Delete(document)
+	if result.RowsAffected == 0 {
+		return fmt.Errorf("未找到你的文档")
+	}
 	if result.Error != nil {
 		return result.Error
 	}

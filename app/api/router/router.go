@@ -13,22 +13,21 @@ func InitRouter() {
 	{
 		user.POST("/register", service.Register)
 		user.GET("/login", service.Login)
+		user.GET("/refresh", middleware.AuthMiddleware(), service.RefreshToken)
 		user.PUT("/change", middleware.AuthMiddleware(), service.Change)
+		user.GET("/info", middleware.AuthMiddleware(), service.GetUserInfo)
+		user.PUT("/password", middleware.AuthMiddleware(), service.ChangePassword)
 	}
-	document := r.Group("/document", middleware.AuthMiddleware())
-	{
-		document.POST("/create", service.Create)
-		//document.GET("/get", service.GetDocument)
-		//document.PUT("/update", service.UpdateDocument)
-		document.GET("/share", service.ShareDocument)
-	}
-	r.GET("/document/share/:id", middleware.FindAuthorityMiddleware(), service.GetSharedDocument)
+
+	r.GET("/document/share/:id", middleware.GetShare(), service.GetSharedDocument)
 	myDocuments := r.Group("/myDocuments", middleware.AuthMiddleware())
 	{
-		myDocuments.GET("/get/id", service.GetMyDocument)
+		myDocuments.POST("/create", service.Create)
+		myDocuments.GET("/get/:id", service.GetMyDocument)
 		myDocuments.GET("", service.GetMyDocuments)
-		myDocuments.PUT("/update", service.UpdateMyDocument)
-		myDocuments.DELETE("/delete", service.DeleteMyDocument)
+		myDocuments.GET("/share", service.ShareMyDocument)
+		myDocuments.PUT("/update/:id", service.UpdateMyDocument)
+		myDocuments.DELETE("/delete/:id", service.DeleteMyDocument)
 	}
 	err := r.Run()
 	if err != nil {

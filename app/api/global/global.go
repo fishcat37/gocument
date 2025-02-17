@@ -1,7 +1,7 @@
 package global
 
 import (
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.uber.org/zap"
 	"gocument/app/api/global/config"
@@ -14,4 +14,7 @@ var (
 	MysqlDB *gorm.DB
 	RedisDB *redis.Client
 	MongoDB *mongo.Client
+	//Clients map[*websocket.Conn]bool
+	//Lock sync.Mutex
+	//Upgrader   websocket.Upgrader
 )
