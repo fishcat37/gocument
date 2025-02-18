@@ -242,3 +242,38 @@
 2025-02-17T14:06:44.961+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
 2025-02-17T14:06:46.970+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:175 数据库更新失败未找到你的文档
 2025-02-17T14:10:09.279+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/v1/my_documents.go:196 数据库删除失败未找到
+2025-02-18T10:18:53.152+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-18T10:18:53.659+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-18T10:18:53.672+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-18T10:18:53.682+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-18T10:20:21.385+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-18T10:20:21.686+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-18T10:20:21.690+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-18T10:20:21.700+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-18T10:23:52.031+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/user.go:180 更改密码失败 密码错误
+2025-02-18T10:33:07.512+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/user.go:180 更改密码失败 密码错误
+2025-02-18T10:35:23.650+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/my_documents.go:59 数据库查找失败record not found
+2025-02-18T10:41:14.680+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/user.go:180 更改密码失败 密码错误
+2025-02-18T10:43:33.514+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/my_documents.go:59 数据库查找失败record not found
+2025-02-18T10:48:41.966+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-18T10:48:41.976+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-18T10:48:42.455+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-18T10:48:42.460+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-18T10:48:42.470+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-18T10:48:42.477+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-18T10:48:42.481+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-18T10:48:42.493+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-18T10:48:42.494+0800 [31mFATAL[0m D:/goproject/src/work/gocument/app/api/router/router.go:34 init router failedlisten tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2025-02-18T10:49:18.789+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-18T10:49:19.289+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-18T10:49:19.294+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-18T10:49:19.307+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-18T10:49:41.730+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-18T10:49:42.192+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-18T10:49:42.206+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-18T10:49:42.216+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-18T10:53:10.775+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Logger.go:39 initialize logger success
+2025-02-18T10:53:11.265+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:33 mysql connect success
+2025-02-18T10:53:11.279+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:52 redis connect success
+2025-02-18T10:53:11.294+0800 [34mINFO[0m D:/goproject/src/work/gocument/app/api/internal/initialize/Database.go:71 mongodb connect success
+2025-02-18T10:57:17.305+0800 [31mERROR[0m D:/goproject/src/work/gocument/app/api/internal/service/my_documents.go:164 数据库删除失败未找到你的文档

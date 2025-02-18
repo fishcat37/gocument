@@ -7,6 +7,7 @@ import (
 	"gocument/app/api/internal/consts"
 	"gocument/app/api/internal/dao"
 	"gocument/app/api/internal/model"
+	"gocument/app/api/internal/utils"
 	"net/http"
 	"strconv"
 )
@@ -29,8 +30,14 @@ func GetShare() gin.HandlerFunc {
 			c.Abort()
 		}
 		if wholeDocument.Document.Authority == 0 {
-			AuthMiddleware()(c)
-			contentID, get := c.GetQuery("contendID")
+			token := c.GetHeader("Authorization")
+			err := utils.ParseToken(token)
+			if err != nil {
+				c.JSON(http.StatusBadRequest, gin.H{"status": consts.NoAuthority, "error": err.Error()})
+				c.Abort()
+				return
+			}
+			contentID, get := c.GetQuery("contentID")
 			if !get {
 				c.JSON(http.StatusBadRequest, gin.H{
 					"status": consts.GetIDFailed, "error": "获取内容id错误"})
